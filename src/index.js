@@ -1,6 +1,8 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet, View, Text, StatusBar } from 'react-native';
 
+import './config/ReactotronConfig';
+
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 const styles = StyleSheet.create({
@@ -42,13 +44,15 @@ const styles = StyleSheet.create({
   },
 });
 
+console.tron.log('ok');
+
 export default function App() {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <View style={styles.sectionContainer}>
-          <Text style={styles.sectionTitle}>Learn More</Text>
+          <Text style={styles.sectionTitle}>Hello world - Thiago!</Text>
         </View>
       </SafeAreaView>
     </>
